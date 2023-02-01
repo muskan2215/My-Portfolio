@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal protfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+	  <!--FONT AWESOME-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!--GOOGLE FONTS-->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+          <nav>
+            <div class="logo">
+                <h2><span>M</span>uskan</h2>
+            </div>
+            <ul>
+                <li><a href="#"><B>Home</B></a></li>
+                <li><a href="#"><B>About</B></a></li>
+                <li><a href="#"><B>Contact</B></a></li>
+                <li><a href="#"><B>service</B></a></li>
+            </ul>
+            <img src="image/cart.png" class="card-item">
+          </nav>
+          <div class="text-box">
+            <p>I'M</p>
+            <h1>MUSKAN</h1>
+            <h2> UI / UX Designer.</h2>
+         </div>  
+        </div>
+    </div>
+
+    <!--------about--------->
+    <div id="about">
+        <div class="container1">
+            <div class="row">
+                <div class="about-col-1">
+                  <img src="image/Muskan.jpeg" alt="imf">
+                </div>
+                <div class="about-col-2">
+                   <h1 class="sub-title">About Me</h1><br>
+                    <p class="text">I'm MUSKAN And I am 20 years young girl with  dynamic and enthusiastic person looking for the job Web Design and Development mostly specializing in front end development. A firm believer in my own abilities, I am also a
+                    team player who thrives in a challenging environment.I am a fresher with new and dynamics project ideas. Well-versed in numerous programming languages including HTML5,CSS, C,C++,Visual Basic and strong background in project management and customer relations.</p><br>
+                    <div class="about_contact">
+                        <p class="email"><b>Email:</b>mgoel2215@gmail.com</p><br>
+                        <p class="phone"><b>Phone Number:</b> 9350244060</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------services------------->
+    <div id="services">
+      <div class="container">
+          <h1 class="sub">MY SERVICES</h1>
+          <div class="services-list">
+              <div>
+                  <i class="fa-solid fa-code"></i>
+                  <h2>Web Design</h2>
+                  <p>We are creating a beautiful web designs for our customers as per their needs.
+                      We are specialised in frontend development and can make webpage attractive.                   
+                  </p>
+                   <a href="#contact">Learn more</a>
+                 
+              </div>
+              <div>
+                  <i class="fa-solid fa-crop"></i>
+                  <h2>UI/UX design</h2>
+                  <p>As important the backend solutions , the first journey of users traffic starts from website interface . We work in team and can make a user interface more alluring.</p>
+                      
+                          <a href="#contact" >Learn more</a></div>
+                      
+              <div>
+                  <i class="fa-solid fa-book"></i>
+                  <h2>Project Creation</h2>
+                  <p>In Project Creation we help you to meet the creation of a unique product or service .After making each phase that is thoroughly checked by our team.</p>
+                  
+                  <a href="#contact">Learn more</a></div>
+             
+          </div>
+      </div>
+  </div>
+  <div id="contact">
+      <div class="container">
+          <div class="row">
+              <div class="contact-left">
+                  <h1 class="title">Contact Me</h1>
+                  <p><i class="fa-solid fa-paper-plane"></i>&nbsp&nbsp24mgoel2215@gmail.com</p>
+                  <div class="social-icons">
+
+                      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="https://www.linkedin.com/in/charu-garg-0a7b17228"><i class="fa-brands fa-linkedin"></i></a>
+
+                  </div>
+                  <a href="#" download class="btn btn2">Download CV </a>
+              </div>
+              <div class="contact-right">
+                  <form name="submit-to-google-sheet">
+                      <input type="text " name="Name" placeholder="Your name " required>
+                      <input type="email" name="Email" placeholder="Your email" required>
+                      <textarea name="Message" rows="5" placeholder="Your Message Here"></textarea>
+                      <button type="submit" class="btn btn2">Submit</button>
+                  </form>
+                  <span id="msg"></span>
+              </div>
+          </div>
+      </div>
+      <div class="copyright">
+          <p>Copyright &copy 2022-All rights reserved </p>
+      </div>
+  </div>
+
+  <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+          for (tablink of tablinks) {
+              tablink.classList.remove("active-link");
+          }
+          for (tabcontent of tabcontents) {
+              tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+      }
+  </script> 
+  <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+          sidemenu.style.right = "0";
+
+      }
+      function closemenu() {
+          sidemenu.style.right = "-200px";
+
+      }
+  </script>
+  <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbz6-44nPLZcrJHCOWz3zili8BooKKIXby6ssw8us5VingMkdBdt9V8vj1x531xpiAhN9A/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+              msg.innerHTML="Message sent successfully "
+           setTimeout(function(){
+              msg.innerHTML=""
+
+          },5000)
+          form.reset()
+      })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  
+</body>
+</html>
